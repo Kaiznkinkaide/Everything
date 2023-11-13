@@ -1,0 +1,45 @@
+*{
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+button{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding:16px;
+    display: block;
+    border: none;
+    background-color: rgb(33, 33, 126);
+    color: white;
+}
+
+
+
+.show__img{
+    margin: 0 auto;
+
+
+}
+
+img{
+    display: none;
+    margin: 20px auto;
+    width: 150px;
+    height:150px;
+
+}
+
+button:hover{
+    display: block;
+    background-color: blue;
+
+}
+
+button:hover + div img{
+    display: block;
+
+}

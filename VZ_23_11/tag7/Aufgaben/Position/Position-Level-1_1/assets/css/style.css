@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    
+  }
+
+  body{
+    height: 100vh;
+    background-image: url("../bilder/andreas-gabler-XEW_Wd4240c-unsplash.jpg");
+    background-size: cover;
+    position: relative;
+  }
+
+  div{
+  color: white;
+  position: absolute;
+  right: 20%;
+  bottom: 70%;
+
+
+  text-align: right;
+}
+
+div h1{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

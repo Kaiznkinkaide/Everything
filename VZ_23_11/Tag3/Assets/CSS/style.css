@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "RobotoReg";
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+
+/* * Glabale Stile für das HTML-Dokument */
+
+html {
+    font-family: "RobotoReg";
+    src: url("./fonts/Roboto-Regular.ttf");
+    background-color: rgb(255, 240, 152);
+
+}
+
+article p:nth-of-type(2) {
+    color: rgb(47, 47, 255);
+}
+
+
+article p:nth-of-type(odd) {
+    color: rgb(134, 255, 170);
+    background-color: aqua;
+}
+
+article p:nth-of-type(hover) {
+    color: rgb(0, 94, 128);
+    background-color: aqua;
+}
+
+article p:nth-of-type(active) {
+    color: rgb(132, 0, 128);
+    background-color: aqua;
+}
+
+li:first-child {
+    color: red
+}
+
+li:nth-child(1) {
+    color: red
+}
+
+li:nth-last-child(1) {
+    color: red;
+}
+
+h2:nth-of-type(1) {
+    color: red;
+    font-size: 100px;
+    text-shadow: 10px 15px 20px;
+}
+
+article:nth-of-type(2) div {
+    width: 100%;
+    min-height: 200px;
+    background-image: url("./Bilder/martyna-kosik-HtCHcblzZXQ-unsplash.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat:repeat-x ;
+}

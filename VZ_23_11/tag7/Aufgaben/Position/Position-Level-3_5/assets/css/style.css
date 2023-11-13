@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+
+header div{
+    height: 80vh;
+    background: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Ubuntu;
+    color: white;
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    text-align: center;
+
+}
+
+header div article{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+header nav{
+    text-align: right;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 50px; 
+    padding-bottom: 20px;
+    position: relative;
+    border-bottom: 1px solid gray;
+}
+
+header nav ul{
+    
+}
+
+
+
+
+
+
+header div nav ul li{
+    display: inline;
+
+}
+header div nav ul li a{
+    text-decoration: none;
+    color: white;
+}

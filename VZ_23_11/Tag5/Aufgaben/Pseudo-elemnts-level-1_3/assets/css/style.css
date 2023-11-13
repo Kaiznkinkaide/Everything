@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-left: 200px;
+    margin-top: 200px;
+    margin-bottom:30px;
+
+}
+
+li{
+    margin-left:250px;
+    margin-top:10px;
+    list-style: none;
+}
+
+h1::first-letter{
+    font-size: 3em;
+    color: #00796B;
+}
+
+h1:hover::first-letter{
+    color: #4FC3F7;
+}
+
+ul{
+    word-spacing: 5px;
+}
+
+li:first-child, li:nth-child(2){
+    text-decoration: line-through;
+}
+li:last-child, li:nth-child(5){
+    text-decoration: underline;
+}
+
+
+
+#li__one:before, #li__two:before{
+    content: url(../bilder/Lev1_3_css-einführung_pseudo-element/check.png);
+    
+}
+
+#li__three:before, #li__four:before{
+    content: url(../bilder/Lev1_3_css-einführung_pseudo-element/doing.png);
+}
+
+#li__five:before, #li__six:before{
+    content: url(../bilder/Lev1_3_css-einführung_pseudo-element/no.png);
+}
+
+#li__one::after{
+    content: url(../bilder/Lev1_3_css-einführung_pseudo-element/bill.png);
+}
+
+
+
+#li__one::after{
+    content: url(../bilder/Lev1_3_css-einführung_pseudo-element/gym.png);
+}
+
+#li__two::after{
+    content: url(../bilder/Lev1_3_css-einführung_pseudo-element/bill.png);
+}
+
+#li__three::after{
+    content: url(../bilder/Lev1_3_css-einführung_pseudo-element/dance.png);
+}
+
+#li__four::after{
+    content: url(../bilder/Lev1_3_css-einführung_pseudo-element/eat.png);
+}
+
+#li__five::after{
+    content: url(../bilder/Lev1_3_css-einführung_pseudo-element/book.png);
+}
+
+#li__six::after{
+    content: url(../bilder/Lev1_3_css-einführung_pseudo-element/organize.png);
+}
+
+#li__three, #li__four{
+    background-color: #4FC3F7;
+    margin-right: 100px;
+    margin-: 100px;
+
+
+}

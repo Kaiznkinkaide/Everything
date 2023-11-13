@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 5px;
+
+}
+
+img:nth-child(1){
+    display: inline-block;
+    height: 400px;
+
+}
+
+img:nth-child(2){
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+
+}
+
+img:nth-child(3){
+    display: inline-block;
+    height: 20em;
+
+}
+
+img:nth-child(4){
+    display: inline-block;
+    height: 40rem;
+
+}
+
+img:nth-child(5){
+    display: inline-block;
+
+    width: 35vw;
+}
+
+img:nth-child(6){
+    display: inline-block;
+    height: 75vh;
+
+}

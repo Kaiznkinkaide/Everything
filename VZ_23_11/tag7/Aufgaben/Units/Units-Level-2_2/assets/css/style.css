@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+Body{
+    position: relative;
+    height: 100vh;
+    background: url("https://source.unsplash.com/random/3000x3000");
+    position: center;
+    position: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+    text-align: center;
+    width: 1000px;
+    height: fit-content;
+    font-size:50px;
+    background: hsla(349, 6%, 38%, 0.3);
+    left: 50%;
+    top:30%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 2em;
+    
+}

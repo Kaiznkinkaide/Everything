@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Monster;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: Monster;
+}
+
+h3::first-letter{
+    font-size: 50px;
+    color: green;
+}
+
+h3:hover::first-letter{
+    color: blue;
+}
+
+#li__one::before{
+    content: "🎶";
+}
+
+#li__two::before{
+    content: "👁️";
+}
+#li__three::before{
+    content: "🐪";
+}
+
+
+p::first-letter{
+    font-size: 30px;
+    color: red;
+
+}
+
+p::first-line{
+    color:green;
+}
+
+p:hover::first-line{
+    color: blue;
+}
+#p__one{
+    color: gray;
+}
+
+#p__one::first-line{
+    padding-left:50px;
+    color: gray;
+    font-size: 25px;
+}
+
+#p__one::first-letter{
+    font-size: 15px;
+    color: gray;
+
+}
+
+#p__two,#p__three{
+    font-size: 10px;
+}
+
