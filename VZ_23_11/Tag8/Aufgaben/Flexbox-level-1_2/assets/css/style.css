@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: url("../img/neom-RqfFauPXJx0-unsplash.jpg");
+    background-size: cover;
+
+}
+
+header{
+    display: flex;  
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    background: hsla(339, 50%, 50%, 21)
+}
+
+header li {
+
+    list-style: none;
+    display: inline-block;
+    padding: 0 50px;
+
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+#nav-title{
+    color: white;
+    margin-right: auto;
+    font-size: 2em;
+}
+
+header a:hover{
+    color: orange;
+}
+

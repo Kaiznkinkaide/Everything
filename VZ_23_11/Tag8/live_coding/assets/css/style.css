@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ /* display:flex bezieht sich immer auf den Eltercontainer
+ /*
+
+.flex_-selection{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    /* justify-content bezieht sich immer auf die main Axsis*/
+    /* justify-content: flex-start;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: flex-end;
+    justify-content: space-evenly; */
+    /*  allign items bezieht sich immer auf die cross axsis */
+    /* align-items: fex-start;
+    align-items: flex-end;
+    align-items: center; */
+    /* flex-direction: column; */
+/* } */
+
+
+/* .flex_-selection div{
+    height: 50px;
+    width: 50px;
+h
+}  */
+
+/* .flex_-selection div:nth-child(1){ */
+    /* order: verändert die rheinfolge der div elemente innerhalb der Axsis
+    WICHTIG: es müssen alle div elemnte eine Order bekommen! */
+    /* order: 2; */
+    /* align-self: damit können wir die flex items für bestimmte vor der ausrichtung im eltern container ändern */
+    /* align-self: flex-start;
+    background-color: red;
+} */
+
+/* .flex_-selection div:nth-child(2){ */
+    /* order: 1; */
+    /* background-color: rgb(9, 255, 0);
+} */
+/* 
+.flex_-selection div:nth-child(3){ */
+    /* order: 4; */
+    /* background-color: rgb(238, 255, 0);
+} */
+/* 
+
+.flex_-selection div:nth-child(4){
+    /* order: 3; */
+    /* align-self: flex-end;
+    background-color: rgb(0, 4, 255);
+}   */ 
+
+
+main{
+    width: 100vh;
+    height: 200px;
+    display: flex;
+}
+
+ /* main div{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
+
+main div:nth-child(2){
+    flex-shrink: 2;
+    border: 1px solid red;
+
+}
+
+main div:nth-child(1){
+    /* flex-basis ersetzt width: */
+
+/* main ul{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+main ul li {
+    border: 1px solid red
+} */
+footer div{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+footer  {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    align-items: flex-start;
+
+
+}
+/* 
+Flexbox ist für eindimensionale Layouts konzipiert - entweder eine Reihe oder eine Spalte.
+
+Wenn display: flex; auf ein Eltern Container angewendet wird, dann werden die direkten Kinder zu Flex-Elementen.
+Magda Cale11:31
+justify-content beeinflusst die Ausrichtung der Kinderlemente in der Hauptachse des Containers.
+
+justify-content:space-between; / verfügbare Platz wird gleichmäßig zwischen den Elementen verteilt
+
+justify-content: space-around; der verfügbare Platz gleichmäßig zwischen den Elementen aufgeteilt 
+
+justify-content: space-evenly; der verfügbare Platz gleichmäßig zwischen den Elementen und am Anfang und am Ende der Zeile aufgeteilt
+
+justify-content: flex-start; Default
+justify-content: flex-end; Komm */
