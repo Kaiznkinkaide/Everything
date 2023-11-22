@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+fieldset {
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.formfield {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+
+}
+
+.buttons {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 2px 6px;
+}
+
+input[type="reset"] {
+    padding: 2px 6px;
+}

@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.formfield {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.star {
+    display: flex;
+    padding-top: 5px;
+}
+
+.star p {
+    color: red;
+
+}
+
+.mail {
+    width: 20.2vw;
+}
+
+select {
+    width: 20.2vw;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="submit"] {
+    margin-top: 2vh;
+    width: 20.3vw;
+    border: none;
+    padding: 0.5rem 3rem;
+    background: rgb(95, 151, 171);
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background: black;
+}

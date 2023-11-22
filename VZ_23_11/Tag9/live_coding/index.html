@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>label & Input</legend>
+
+            <!----------  für Input ---------- -->
+            <section class="text">
+                <label for="Text">gib hier ein text ein</label>
+                <input type="text" name="" id="" placeholder="Max Mustermann">
+            </section>
+
+            <!--  Atribute "placeholder"  -->
+            <!-- Label wichtig für screenreader -->
+            <!-- disabeld feld kann nicht ausgefüllt werden -->
+            <!-- requierd , muss ausgefüllt werden sonst kann das formular nict abgeschickt werden -->
+
+
+            <section class="nummber">
+                <label for="nummber">gib hier eine nummer ein</label>
+                <input type="Nummber" id="" placeholder="Eine nummer">
+
+            </section>
+
+            <section class="telefonn">
+                <label for="telefon">gib eine nummer</label>
+                <input type="Tel" id="" disabled placeholder="Meine telefonnummer">
+            </section>
+
+            <section class="mail">
+                <label for="mail">mail</label>
+                <input type="email" name="" id="" required placeholder="email adresse">
+            </section>
+
+            <secttion class="login">
+                <label for="Password">password</label>
+                <input type="password" name="" id="" placeholder="min 8 zeichen">
+            </secttion>
+
+            <hr>
+
+            <!----------  Radio ---------- -->
+
+            <section>
+                <div>
+                    <input type="radio" name="auswahl" id="radioja" checked>
+                    <label for="radioja">ja</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="auswahl" id="radionein">
+                    <label for="radionein">nein</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="auswahl" id="radiovllt">
+                    <label for="radiovllt">Vielleicht</label>
+                </div>
+
+
+            </section>
+
+            <!----------  checkbox & select------------>
+
+            <section>
+                <h2>ich packe meinen koffer</h2>
+                <div>
+                    <label for="checkboxhose">Hose</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+
+                <div>
+                    <label for="checkboxshirt">shirt</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+
+                <div>
+                    <label for="checkboxschuhe">schuhe</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+
+                <div>
+                    <label for="checkboxessen">essen</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+
+                <div>
+                    <label for="checkboxtrinken">trinken</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+
+                <section>
+                    <h2>meine reise ziele</h2>
+
+                    <div>
+                        <select name="" id="">
+                            <option value="">wähle aus..</option>
+                            <option value="hr">Kroatio</option>
+                            <option value="lk">Sri Lanka</option>
+                            <option value="MG">Madagascar</option>
+                            <option value="MX">Mexico</option>
+                            <option value="BR">Brasielein</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!----------  Date ------------>
+
+                <section>
+                    <div>
+                        <label for="date">Datum</label>
+                        <input type="date" name="" id="date">
+                    </div>
+                </section>
+
+                <hr>
+
+                <!-------- Range------->
+
+                <section>
+                    <div>
+                        <label for="feelings">auf einer skala von 1 - 10</label>
+                        <input type="range" name="" id="feelings" min="1" max="100">
+                    </div>
+                </section>
+
+                <!-------- Textarea & File ------->
+
+                <section>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="meine geschichte ..."></textarea>
+                        <input type="file" name="" id="file">
+                    </div>
+                </section>
+
+                <!-------- Submit / Button ------->
+
+                <section>
+                    <div>
+                        <input type="button" value="Button">
+                        <!--------  wird verwendet  um JS-funktionenen auf der website auszulösen------->
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                        <!-------- wird verwendet um html formulare zu versenden ------->
+                    </div>
+                </section>
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

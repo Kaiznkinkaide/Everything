@@ -1,0 +1,55 @@
+label {
+
+    width: 30vw;
+}
+
+fieldset {
+
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.space {
+    padding-top: 5px;
+    display: flex;
+
+}
+
+.space_two {
+    padding-top: 5px;
+    display: flex;
+
+}
+
+.space_three {
+    padding-top: 5px;
+    display: flex;
+
+}
+
+.space_four {
+    padding-top: 5px;
+    display: flex;
+
+}
+
+.space_five {
+
+    width: fit-content;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.to_choose {
+    padding-left: 5px;
+
+}
+
+.space_seven {
+
+    display: flex;
+    align-items: center;
+
+}
