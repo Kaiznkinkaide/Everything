@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 33vh);
+    grid-template-areas:
+        "one two three"
+        "four five six"
+        "seven eight nine";
+}
+
+
+div {
+    position: relative;
+}
+
+div p {
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateY(50%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div:hover p {
+    display: flex;
+    transform: translateY(0);
+}
+
+
+
+
+
+.one {
+    background-image: url("https://picsum.photos/500?1");
+    grid-area: one;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.two {
+    background-image: url("https://picsum.photos/500?2");
+    grid-area: two;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.three {
+    background-image: url("https://picsum.photos/500?3");
+    grid-area: three;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.four {
+    background-image: url("https://picsum.photos/500?4");
+    grid-area: four;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.five {
+    background-image: url("https://picsum.photos/500?5");
+    grid-area: five;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.six {
+    background-image: url("https://picsum.photos/500?6");
+    grid-area: six;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.seven {
+    background-image: url("https://picsum.photos/500?7");
+    grid-area: seven;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.eight {
+    background-image: url("https://picsum.photos/500?8");
+    grid-area: eight;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.nine {
+    background-image: url("https://picsum.photos/500?9");
+    grid-area: nine;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

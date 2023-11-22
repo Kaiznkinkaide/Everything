@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond";
+}
+
+:root {
+    --font-size-h1: 2.8rem;
+    --font-size-h2: 2.2rem;
+    --font-size-h3: 1.5rem;
+    --font-size-p: 1rem;
+    --font-size-button: 1.25rem;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+p {
+    font-size: var(--font-size-p);
+}
+
+body {
+    width: 80vw;
+}
+
+html {
+
+    display: flex;
+    justify-content: center;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: 15vh 85vh;
+    grid-template-areas:
+        "header header"
+        "main aside";
+    background-color: #E9E9E0;
+    gap: 2rem;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.nav p {
+    margin: 3px 0;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 500;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas:
+        "h2 h2"
+        "text bild";
+    grid-area: main;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.headline {
+    grid-area: h2;
+}
+
+.beiträge {
+    grid-area: text;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "colum1 colum2"
+    ;
+    gap: 10px;
+}
+
+.colums1 {
+    grid-area: colum1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-areas:
+        "shatter"
+        "knife"
+        "contact"
+    ;
+}
+
+.colums2 {
+    grid-area: colum2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-areas:
+        "microwave"
+        "cooking"
+        "death"
+    ;
+}
+
+.colum2 {
+    grid-area: colum2;
+}
+
+.bild {
+    grid-area: bild;
+}
+
+.shatter {
+    grid-area: shatter;
+}
+
+.knife {
+    grid-area: knife;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.microwave {
+    grid-area: microwave;
+}
+
+.cooking {
+    grid-area: cooking;
+}
+
+aside {
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(3, 3fr);
+    gap: 1rem;
+    grid-template-areas:
+        "sponsors"
+        "addexample"
+        "addknives"
+        "addikea";
+    justify-content: center;
+    text-align: center;
+}
+
+.visit {
+    grid-area: sponsors;
+}
+
+.add {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    border: 5px solid black;
+    grid-area: addexample;
+}
+
+.knive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    grid-area: addknives;
+    padding: 0.5rem 1rem;
+    gap: 2rem;
+}
+
+.knive a {
+    color: #737B80;
+    text-align: center;
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+.addimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+    grid-area: addikea;
+}

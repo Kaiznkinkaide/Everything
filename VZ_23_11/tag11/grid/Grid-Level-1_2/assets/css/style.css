@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    grid-template-areas:
+        "rot rot rot rot"
+        "blau blau grün grün"
+        "blau blau lila1 lila2"
+    ;
+    margin: 10px 5px; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    grid-template-areas:
+        "lila1 lila2 rot rot"
+        "grün blau rot rot"
+        "grün blau rot rot"
+    ;
+    margin: 10px 5px;
+
+
+
+}
+
+.red {
+    background-color: red;
+    grid-area: rot;
+    border-radius: 5px;
+}
+
+.blue {
+    background-color: blue;
+    grid-area: blau;
+    border-radius: 5px;
+}
+
+.green {
+    background-color: green;
+    grid-area: grün;
+    border-radius: 5px;
+}
+
+.violet1 {
+    background-color: violet;
+    grid-area: lila1;
+    border-radius: 5px;
+}
+
+.violet2 {
+    background-color: violet;
+    grid-area: lila2;
+    border-radius: 5px;
+}

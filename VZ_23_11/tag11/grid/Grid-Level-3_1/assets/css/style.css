@@ -1,0 +1,213 @@
+/* Global Styling */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-font-color: rgba(102, 102, 102, 1);
+    --second-font-color: rgba(255, 255, 255, 1);
+    --button-purple: rgba(116, 92, 249, 1);
+}
+
+
+/* Styling des Headers mit Flexbox */
+
+header {
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    z-index: 1;
+
+}
+
+/* Styling der Nav-Bar mit Flexbox und 80% der Headerbreite */
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling des Logos mit Schriftart Raleway und first-font-color (font-size 1em) */
+
+.logo {
+    margin-left: 5%;
+    font-family: 'Raleway';
+    color: var(--first-font-color);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Styling der UL mit Flexbox und 100% der Nav-Bar-Höhe */
+
+header nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Listenelemente mittig zur Nav-Bar ausgerichtet */
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling der a-Tags der Nav-Bar mit Schriftart Inter und first-font-color (font-size 0.6em) */
+
+header nav ul li a {
+    font-family: 'Inter';
+    text-decoration: none;
+    color: var(--first-font-color);
+    font-size: 0.6em;
+}
+
+/* Styling der Hover-Effekte auf dem Logo und den Nav-Bar-Elementen */
+
+.logo:hover {
+    color: #333;
+}
+
+header nav ul li a:hover {
+    color: #337ab7;
+}
+
+.background-image {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/photo-1443527216320-7e744084f5a7-1.jpg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--second-font-color);
+    font-family: 'Raleway';
+}
+
+.landing-page {
+    margin-top: 10%;
+}
+
+.background-image h1 {
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.background-image p {
+    font-weight: 400;
+    font-size: 0.7em;
+    margin-bottom: 20px;
+}
+
+.background-image section {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.button__read-more {
+    background-color: var(--button-purple);
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section a {
+    text-decoration: none;
+    color: var(--second-font-color);
+    font-size: 0.6em;
+    text-transform: uppercase;
+}
+
+
+.button__download {
+    border: 0.5px solid var(--second-font-color);
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__read-more:hover {
+    background-color: rgba(115, 92, 249, 0.846);
+    transition-delay: 0.1s;
+}
+
+.button__download:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(102, 102, 102, 1);
+    transition-delay: 0.1s;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(2, 40vh);
+    grid-template-areas:
+        "portfolio"
+        "SEO";
+}
+
+.example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    gap: 2rem;
+
+}
+
+.portfolio_section {
+    grid-area: portfolio;
+
+}
+
+.SEO_section {
+    background-color: lightgray;
+    grid-area: SEO;
+
+
+}
+
+.example div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 40px;
+    background-color: violet;
+}
