@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transition {
+
+    width: 200px;
+    height: 200px;
+    background-image: url("../../img/fuck.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.transition div {
+
+    display: flex;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    transform: translateY(200px);
+    transition: all 0.5s 0.5s ease-in-out;
+    align-items: center;
+}
+
+p {
+    color: white;
+    background-color: rgba(199, 32, 32, 0.409);
+    padding: 90px;
+
+
+}
+
+.transition:hover div {
+    transform: translateY(0);
+}

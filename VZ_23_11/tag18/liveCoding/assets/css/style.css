@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.transform div {
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 1s 0.1s ease-out;
+    /* transform-origin macht ????? */
+    transform-origin: 0% 0%;
+
+    /* das shortcut besteht aus diesen funktionen
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in; */
+
+
+
+    /*  "all" spricht alle eigenschaften
+    es ginge aber auch color o. background-color, font-size */
+
+}
+
+.transform div:hover {
+    color: blue;
+    background-color: green;
+    /* zum bewegen auf der x und y achse */
+    transform: translateX(50px);
+    transform: translateY(100px);
+    /* shortcut */
+    transform: translate(100px, 200px);
+
+    transform: rotateX(90deg);
+
+    transform: scaleX(2);
+    transform: scaleY(2);
+    /* SC */
+    transform: scale(6);
+
+    transform: skew(50deg, 30deg);
+
+    /* SC- alle funktionen in eins */
+    transform: translate(50px, 100px) rotate(110deg);
+
+
+}
+
+
+.animation {
+    background-color: red;
+    height: 500px;
+    width: 500px;
+}
+
+.animation div {
+    height: 50%;
+    width: 50%;
+    background-color: purple;
+
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* SC */
+    animation: move 5s linear 0.3s infinite forwards alternate;
+}
+
+@keyframes move {
+    0% {
+        background-color: green;
+    }
+
+    33% {
+        background-color: pink;
+        transform: translate(100%, 100%);
+    }
+
+    66% {
+        background-color: brown;
+        transform: translateX(100%);
+    }
+
+    100% {
+        background-color: blue;
+        transform: translateX(100%);
+    }
+}
+
+
+.loaderSection {
+    display: flex;
+    gap: 10px;
+}
+
+.loaderSection div {
+    background-color: gold;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.loaderSection div:nth-of-type(1) {
+    animation: loader 3s infinite ease-in-out;
+}
+
+.loaderSection div:nth-of-type(2) {
+    animation: loader 3s 0.3s infinite ease-in-out;
+}
+
+.loaderSection div:nth-of-type(3) {
+    animation: loader 3s 0.5s infinite ease-in-out;
+}
+
+.loaderSection div:nth-of-type(4) {
+    animation: loader 3s 0.4s infinite ease-in-out;
+}
+
+
+/* die prozente geben die schritte an bei 0%-erste  position- usw */
+
+@keyframes loader {
+    0% {
+        transform: translateY(0);
+    }
+
+    33% {
+        transform: translateY(-10px);
+        background-color: red;
+    }
+
+    66% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
