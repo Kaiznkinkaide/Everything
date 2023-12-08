@@ -1,0 +1,11 @@
+.headline {
+    font-family: 'Lucida Sans';
+    font-size: 5rem;
+    color: yellow;
+}
+
+.buttonFrame {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}

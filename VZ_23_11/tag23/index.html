@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList&form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="#home">HOME</a>
+                <a href="#">ABOUT</a>
+            </div>
+            <img onclick="getDrak()" src="./assets/img/darkLight.png" alt="">
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <form onsubmit="getInputValue(); return false">
+                <label for="textId">Name</label>
+                <input type="text" name="name" class="name" id="textId">
+                <br>
+                <label for="num">Age</label>
+                <input type="number" name="num" class="num" id="num">
+                <label for="range">Range</label>
+                <input type="range" name="range" id="range" class="range">
+                <br>
+                <label for="checkbox">Happy?</label>
+                <input type="checkbox" id="checkbox" class="checkbox">
+                <label for="bday">Bday</label>
+                <input type="date" id="bday" class="bday">
+                <br />
+                <input type="submit">
+            </form>
+            <p class="output"></p>
+        </section>
+
+        <section>
+            <h2 onclick="addClass()" class="myAdd">ADD Class</h2>
+            <h3 onclick="removeClass()" class="remove">REMOVE Class</h3>
+        </section>
+
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

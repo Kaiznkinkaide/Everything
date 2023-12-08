@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+
+
+.red {
+    background-color: red;
+}

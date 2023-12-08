@@ -13,7 +13,9 @@ function showit(){
     console.log(eingabe);
     let body = document.querySelector(".textfeldOutput");
     body.innerHTML += `<p>${eingabe}<p/>`
+    console.log(new Date().toString());
+    document.querySelector('#info').innerHTML += (new Date().toString());
+    body.innerHTML += `<p>Hello again<p/>`
 }
 
-console.log(new Date().toString());
-document.querySelector('#info').innerHTML += (new Date().toString());
+
