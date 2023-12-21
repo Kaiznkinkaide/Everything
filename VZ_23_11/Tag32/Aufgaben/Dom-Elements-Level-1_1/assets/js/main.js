@@ -1,23 +1,7 @@
-
-
-
-
-
-const addElement = () =>{
-
-    let inputText = document.querySelector('#input-text').value
-
-    console.log(inputText);
-    
-let firstChild = document.createElement("li")
-firstChild.textContent = inputText
-
-let list  = document.querySelector('#liste')
-list.appendChild(firstChild)
-
-let inputTextLeeren = document.querySelector('#input-text')
-inputTextLeeren.value = ""
-
-    
-    
-}
+const addElement = () =>{let inputTextLeeren = document.querySelector('#input-text')
+    if(inputTextLeeren.value === ""){return null
+    } else{let inputText = document.querySelector('#input-text').value
+        let firstChild = document.createElement("li")
+        firstChild.textContent = inputText
+        let list  = document.querySelector('#liste')
+        list.appendChild(firstChild)}}
