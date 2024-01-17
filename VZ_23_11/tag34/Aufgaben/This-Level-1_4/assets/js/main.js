@@ -8,4 +8,4 @@ let obj2 = { name: "Scott", fahrrad: fahrrad };
 
 fahrrad()
 obj1.fahrrad()
-obj2.fahrrad() 
+obj2.fahrrad()
