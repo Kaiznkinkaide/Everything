@@ -18,17 +18,20 @@ const sendFile = (name, res) =>{
 
 const server = http.createServer((req, res) =>{
     if(req.url === '/'){
-        sendFile("index.html", res)
-    } else if(req.url === '/about'){
-        sendFile("about.html", res)
-    } else if (req.url === '/contact'){
-        sendFile("contact.html", res)
-    } else if(req.url === '/cock'){
-        sendFile("cock.html", res)
-    }else if(req.url === "/style.css"){
-            sendFile("/style.css", res)
+        sendFile("index.html", res)}
+    else{
+        sendFile(req.url, res)
+    }}
+    // } else if(req.url === '/about'){
+    //     sendFile("about.html", res)
+    // } else if (req.url === '/contact'){
+    //     sendFile("contact.html", res)
+    // } else if(req.url === '/cock'){
+    //     sendFile("cock.html", res)
+    // }else if(req.url === "/style.css"){
+    //         sendFile("/style.css", res)
         
-        }}
+    //     }}
 )
 
 
